@@ -187,8 +187,8 @@ async def _(event):
                 await silently_send_message(bot_conv, "/done")
 
 
-    await event.edit(f"Kanged! Sticker Added [To This](t.me/addstickers/{packshortname}), pack{pack}"
-                     f"`by` {DEFAULTUSER}\n")
+    await event.edit(f"Kanged! Sticker Added [Here](t.me/addstickers/{packshortname}) "
+                     f" `by` {DEFAULTUSER}\n")
 
 
 @borg.on(admin_cmd(pattern="packinfo"))
