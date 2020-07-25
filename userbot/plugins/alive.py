@@ -14,5 +14,4 @@ async def amireallyalive(alive):
                      "`Telethon version: 6.9.0\nPython: 3.7.3\n`"
                      # Don't change this. Add your own.
                      "`Bot created by:` [Akashi](tg://user?id=1195176369)\n"
-                     f"`Forked By`: {DEFAULTUSER}\n\n"
-                     "https://github.com/sudo-akashi/SudoBot")
+                     f"`Forked By`: {DEFAULTUSER}\n\n")
