@@ -43,7 +43,7 @@ async def _(event):
             afk_time = datetime.datetime.now()  # pylint:disable=E0602
         USER_AFK = f"yes: {reason}"  # pylint:disable=E0602
         if reason:
-            await borg.send_message(event.chat_id, f"**I am going AFK because I am {reason}")
+            await borg.send_message(event.chat_id, f"I am going AFK because I am {reason}")
         else:
             await borg.send_message(event.chat_id, f"**I am AFK now**")
         await asyncio.sleep(5)
@@ -70,7 +70,7 @@ async def set_not_afk(event):
         total_afk_time = str((afk_end - afk_start))
     current_message = event.message.message
     if ".afk" not in current_message and "yes" in USER_AFK:  # pylint:disable=E0602
-        shite = await borg.send_message(event.chat_id, "Online Now\nWas afk for:`" + total_afk_time + "`")
+        shite = await borg.send_message(event.chat_id, "Online Now\nWas afk for:" + total_afk_time + "")
         try:
             await borg.send_message(  # pylint:disable=E0602
                 Config.PRIVATE_GROUP_BOT_API_ID,  # pylint:disable=E0602
@@ -143,7 +143,7 @@ async def on_afk(event):
             else:
                 afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
-        message_to_reply = f"Hey! I am currently offline. Leave your message\Don't Spam " + \
+        message_to_reply = f"Hey! I am currently offline. Leave your message\nDon't Spam " + \
             f"\n\nI am offline because I am: {reason}" \
             if reason \
             else f"I am currently offline. Please drop your message.\nDon't Spam"
