@@ -18,7 +18,7 @@ from PIL import ImageEnhance, ImageOps
 
 from userbot import CMD_HELP
 from userbot.events import register
-from userbot.modules.admin import get_user_from_event
+from userbot.plugins.admin import get_user_from_event
 
 
 EMOJI_PATTERN = re.compile(
