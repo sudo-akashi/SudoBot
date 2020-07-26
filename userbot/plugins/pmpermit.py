@@ -14,9 +14,9 @@ CACHE = {}
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Please Set ALIVE_NAME"
 USER_BOT_WARN_ZERO = "You were spamming my inbox, so you're being blocked and reported."
 USER_BOT_NO_WARN = ("`Bleep Blop! Don't Fret!`\n"
-                    "`This is an automated message.`"
-                    f"`Drop Your Message, And Don't Spam. I will get back to you.`\n"
-                    "`Or you can tag me in groups as well.`"
+                    "`This is an automated message.`\n"
+                    f"`Drop your message, and don't spam. I will get back to you.`\n"
+                    "`Or you can tag me in groups as well.`\n"
                     "`You will be blocked and reported if you spam.`")
 
 
