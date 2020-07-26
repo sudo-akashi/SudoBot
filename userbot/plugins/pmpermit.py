@@ -12,12 +12,12 @@ CACHE = {}
 
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Please Set ALIVE_NAME"
-USER_BOT_WARN_ZERO = "You were spamming.\nBlocked and Reported!"
-USER_BOT_NO_WARN = ("Hey There!"
-                    "You can see that i haven't approved you"
-                    f"to my inbox yet\n\n"
-                    "Please tag me in a group instead."
-                    "Or leave your message and don't spam.")
+USER_BOT_WARN_ZERO = "You were spamming my inbox, so you're being blocked and reported."
+USER_BOT_NO_WARN = ("`Bleep Blop! Don't Fret!`\n"
+                    "`This is an automated message.`"
+                    f"`Drop Your Message, And Don't Spam. I will get back to you.`\n"
+                    "`Or you can tag me in groups as well.`"
+                    "`You will be blocked and reported if you spam.`")
 
 
 if Var.PRIVATE_GROUP_ID is not None:
